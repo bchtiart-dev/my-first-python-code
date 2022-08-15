@@ -2,3 +2,5 @@
 
 ini adalah kode pertama saya
 hihihiiii...
+
+Sejarah baru dimulai
