@@ -1,10 +1,13 @@
 # PERCABANGAN
 
-jumlah_botol_susu = 8
-jumlah_telur = 8
 
 print('ibu menyuruh budi ke toko "Budi, beli susu 1 botol"')
 print('Budi menjawab"iya Bu"')
+
+jumlah_botol_susu = 8
+jumlah_telur = 258
+print(f'jumlah botol susu {jumlah_botol_susu}')
+print(f'jumlah telur {jumlah_telur}')
 
 print('kalau ada telur, beli 5')
 print('siap. Budi berangkat ke Toko')
