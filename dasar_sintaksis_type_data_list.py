@@ -58,7 +58,7 @@ for i in range(0, len(daftar_buku)):
     print(daftar_buku[i])
 
 
-print('\npop-1 (menghapus kedua dari belakang)')
+print('\npop-2 (menghapus kedua dari belakang)')
 daftar_buku = ['seven habits', 'how to inflluence people', 'the power of kepepet', '36cmderajat']
 daftar_buku.pop(-2)
 for i in range(0, len(daftar_buku)):
@@ -66,10 +66,45 @@ for i in range(0, len(daftar_buku)):
 
 
 
-print('\nmenghapus daftar, list comprehension')
+print('\nPerintah Del. menghapus daftar, list comprehension')
 daftar_buku = ['seven habits', 'how to inflluence people', 'the power of kepepet', '36cmderajat']
-del daftar_buku[:]
+del daftar_buku[:2] # [START : END]
+for i in range(0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nPerintah Del. menghapus daftar, list comprehension')
+daftar_buku = ['seven habits', 'how to inflluence people', 'BUKU TAMBAHAN', 'the power of kepepet', '36cmderajat']
+del daftar_buku[:-2] # [START : END]
+for i in range(0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nPerintah Del. (Titik dua dobel ["::"], melompati. list comprehension')
+daftar_buku = ['seven habits', 'how to inflluence people', 'BUKU TAMBAHAN', 'the power of kepepet', '36cmderajat']
+del daftar_buku[::2] # [START : END]
 for i in range(0, len(daftar_buku)):
     print(daftar_buku[i])
 
 
+print('\nMembuat List Baru')
+daftar_buku = ['seven habits', 'how to inflluence people', 'BUKU TAMBAHAN', 'the power of kepepet', '36cmderajat']
+daftar_buku_baru = daftar_buku [:]
+for i in range(0, len(daftar_buku)):
+    print(daftar_buku[i])
+
+print('\nMembuat List Baru')
+del daftar_buku [:]
+for i in range(0, len(daftar_buku_baru)):
+    print(daftar_buku_baru[i])
+
+
+print('\nMembuat List Baru dengan Comprehension : Ganjil')
+daftar_buku = ['1 seven habits', '2 how to inflluence people', '3 BUKU TAMBAHAN', '4 the power of kepepet', '5 36cmderajat']
+daftar_buku_baru = daftar_buku [0::2]
+for i in range(0, len(daftar_buku_baru)):
+    print(daftar_buku_baru[i])
+
+print('\nMembuat List Baru dengan Comprehension : Genap')
+daftar_buku = ['1 seven habits', '2 how to inflluence people', '3 BUKU TAMBAHAN', '4 the power of kepepet', '5 36cmderajat']
+daftar_buku_baru = daftar_buku [1::2]
+for i in range(0, len(daftar_buku_baru)):
+    print(daftar_buku_baru[i])
